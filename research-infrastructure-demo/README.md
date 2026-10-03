@@ -14,10 +14,17 @@ Requires Python 3.10+ and no third-party packages.
 ```bash
 cd research-infrastructure-demo
 python demo.py
+python experiment_flow.py
 python -m unittest discover -s tests -v
 ```
 
 GitHub Actions runs the same tests when this demo changes.
+
+`experiment_flow.py` provides a scripted study-flow simulation: only invitees
+who consent are randomized, assignment is reproducible, and the generated
+responses use synthetic codes and scores. It writes aggregate results and a
+synthetic response export. This is a prototype of research workflow logic, not
+an online survey platform or evidence of running a real participant study.
 
 The run writes `outputs/summary.json` and `outputs/pipeline.jsonl`. The summary
 contains only aggregate values. The log records processing steps and row

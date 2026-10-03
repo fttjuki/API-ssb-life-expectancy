@@ -3,3 +3,5 @@ __pycache__/
 *.py[cod]
 outputs/summary.json
 outputs/pipeline.jsonl
+outputs/experiment_summary.json
+outputs/experiment_synthetic_responses.csv
